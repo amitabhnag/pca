@@ -4,7 +4,7 @@
 # About: This module implements oja PCA algorithm.
 # Module functions:
 #       oja_pca - This function implements the stochastic gradient descent to compute the principal component using Oja's algorithm
-#       deflate - TBD - THis is used to compute the
+#       deflate - After computing a principal component, to compute the next set of principal components/eigenvectors, technique called "deflation" is used
 #       displayOjaPCAResult - display the PCA values for a particular component and the plot of objective vs iteration
 
 from IPython.core.display import display
@@ -12,10 +12,6 @@ import numpy as np
 import numpy.linalg as linalg
 import matplotlib
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LassoCV
-import pandas as pd
-import sklearn.preprocessing as pre
-from sklearn import linear_model
 import copy
 from sklearn.decomposition import PCA
 
@@ -57,7 +53,7 @@ def deflate(z, a):
 def displayOjaPCAResult(a,pca_objective_vals,PCANum,max_iter = 1000):
     #Parameters:
         #a - top eigenvectors/principal component
-        #pca_objective_vals - array with objective value per iteration
+        #pca_objective_vals - array that stores objective value per iteration
         #PCANum - principal component number
         #max_iter - max tries duing gradient descent
     print('Pincipal component #:', PCANum)

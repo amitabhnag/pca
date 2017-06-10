@@ -10,12 +10,7 @@
 from IPython.core.display import display
 import numpy as np
 import numpy.linalg as linalg
-import matplotlib
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LassoCV
 import pandas as pd
-import sklearn.preprocessing as pre
-from sklearn import linear_model
 import copy
 from sklearn.decomposition import PCA
 import oja_pca_lib
