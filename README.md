@@ -1,4 +1,5 @@
-This project provides Oja PCA implementation. Additionally it provides code comparison with sklearn's PCA implementation. Example code with synthetic and real world data is included. 
+# Principal Component Analysis (PCA) using Oja and sklearn
+This project provides Oja PCA implementation. Additionally, it provides code comparison with sklearn's PCA implementation. Example code with synthetic and real world data is included. This library is implemented using Python 3.6.
 
 PCA involves computing the top eigenvectors of the empirical covariance matrix of the data. The data is assumed to be centered. Oja algorithm is one of the ways the eigenvectors, which is stochastic gradient descent applied to PCA.
 
@@ -11,7 +12,7 @@ This module implements oja PCA algorithm
 This module provides an example of invoking oja pca library. This module uses both synthetic and a real world data set while invoking the oja PCA library 
 
 ## comparison.py
-This module compares oja_pca library's PCA vs sklearn PCA. First three components from both methods are printed. Additionally for oja PCA the plot between gradient descent iteration and objective function is also displayed
+This module compares oja_pca library's PCA vs sklearn PCA. First three components from both methods are printed. Additionally, for oja PCA the plot between gradient descent iteration and objective function is also displayed
 
 ## Quick Start:
 
